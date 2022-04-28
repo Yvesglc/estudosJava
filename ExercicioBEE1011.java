@@ -1,7 +1,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Esfera {
+public class ExercicioBEE1011 {
     public static void main(String[] args) {
         Locale .setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
