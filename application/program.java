@@ -1,5 +1,7 @@
 package application;
 
+import Entities.Triangle;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -8,21 +10,21 @@ public class program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        double xa, xb, xc, ya, yb, yc;
+        Triangle x, y;
+        x = new Triangle();
+        y = new Triangle();
 
         System.out.println("Diga as medidas do triângulo X:");
-        xa = sc.nextDouble();
-        xb = sc.nextDouble();
-        xc = sc.nextDouble();
+        x.a = sc.nextDouble();
+        x.b = sc.nextDouble();
+        x.c = sc.nextDouble();
         System.out.println("Diga as medidas do triângulo Y:");
-        ya = sc.nextDouble();
-        yb = sc.nextDouble();
-        yc = sc.nextDouble();
+        y.a = sc.nextDouble();
+        y.b = sc.nextDouble();
+        y.c = sc.nextDouble();
 
-        double p = (xa + xb + xc) / 2;
-        double areaX = Math.sqrt(p * (p - xa) * (p - xb) * (p - xc));
-        p = (ya + yb + yc) / 2;
-        double areaY = Math.sqrt(p * (p - ya) * (p - yb) * (p - yc));
+        double areaX = x.area();
+        double areaY = y.area();
         System.out.printf("Area do triângulo X: %.4f%n", areaX);
         System.out.printf("Area do triângulo Y: %.4f%n", areaY);
 
