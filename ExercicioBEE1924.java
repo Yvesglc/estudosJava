@@ -6,7 +6,7 @@ public class ExercicioBEE1924 {
         int n = sc.nextInt();
         for (int i = 0; i < n + 1; i++) {
             String curso = sc.nextLine();
+            System.out.println(curso);
         }
-        System.out.println("Ciencia da Computacao");
     }
 }

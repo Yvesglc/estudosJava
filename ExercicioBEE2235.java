@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ExercicioBEE2235 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a, b, c;
+        a = sc.nextInt();
+        b = sc.nextInt();
+        c = sc.nextInt();
+        if (a == b || a == c || b == a || b == c)
+            System.out.println("S");
+        else if (a + b == c || a + c == b || b + c == a)
+            System.out.println("S");
+        else
+            System.out.println("N");
+
+        sc.close();
+    }
+}
