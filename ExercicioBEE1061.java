@@ -5,16 +5,16 @@ public class ExercicioBEE1061 {
     public static void main(String[] args) {
 
 
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        String dia_1 = entrada.nextLine();
-        String dia_1_horario = entrada.nextLine();
+        String dia_1 = sc.nextLine();
+        String dia_1_horario = sc.nextLine();
 
         String[] dia_1_split = dia_1.split(" ");
         String[] dia_1_horario_split = dia_1_horario.split(" : ");
 
-        String dia_2 = entrada.nextLine();
-        String dia_2_horario = entrada.nextLine();
+        String dia_2 = sc.nextLine();
+        String dia_2_horario = sc.nextLine();
 
         String[] dia_2_split = dia_2.split(" ");
         String[] dia_2_horario_split = dia_2_horario.split(" : ");
